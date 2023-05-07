@@ -1,0 +1,112 @@
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: bisque;
+    color: black;
+    height: 50px;
+    font-style: italic;
+    display:flex;
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    /*margin-top: 10px;*/
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover
+{
+    background-color: rgb(255, 146, 124);
+    cursor: pointer;
+}
+
+.info{
+    padding: 50px;
+    font-size: 25px ;
+    font-family: 'Dancing Script', cursive;
+}
+
+.gameInfo
+{
+    padding: 0 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.imgbox img{
+    width: 00px;
+    transition: width 1s ease-in-out;
+    padding: 0 50px;
+
+}
+.br-0
+{
+    border-right: 0;
+}
+
+.bl-0
+{
+    border-left: 0;
+}
+
+.bt-0
+{
+    border-top: 0;
+}
+.bb-0
+{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: rgb(255, 146, 124);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 800px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+}
